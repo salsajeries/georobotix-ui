@@ -1,17 +1,27 @@
 {
   "name": "georobotix-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared UI design system and component library for GeoRobotix applications.",
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run dev --workspace=docs",
+    "build": "npm run build --workspaces"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/salsajeries/georobotix-ui.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "georobotix",
+    "ui",
+    "design-system",
+    "component-library"
+  ],
+  "author": "GeoRobotix",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/salsajeries/georobotix-ui/issues"
